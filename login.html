@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/login-bank.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-image: url('img/bank.jpg');">
+
+      <div class="user-login-container">
+          <div class="box" id="login-box">
+            <hr class="login-box-strip">
+            <div class="form-group">
+              <form class="login-form"  method="post" onkeydown="return event.key != 'Enter';">
+                <div class="verify-number-box" id="acnumber-login">
+                  <label class="acnumber-txt"></label>
+                  <input type="number" name="number" id="acnumber-input">
+                  <p class="error-txt" id="acnumber-error"></p>
+                  <span class="verify-number-btn">Next <i class="fa fa-spinner fa-spin"></i> </span>
+                </div>
+                <div class="verify-passcode-box" id="password-login">
+                  <label class="acpassword-txt"></label>
+                  <input type="text" name="passc" id="acpassword-input">
+                  <p class="error-txt" id="acpassword-error"></p>
+                  <span class="verify-passcode-btn">Login <i class="fa fa-spinner fa-spin"></i> </span>
+                </div>
+
+                <div class="verify-pass-box">
+
+                </div>
+              </form>
+            </div>
+            <hr class="login-box-strip">
+          </div>
+          <div class="box" id="tc-box">
+            <div class="form-group">
+              <span id="tc-title"></span>
+              <span class="tc" id="tc-1">
+
+              </span>
+              <span class="tc" id="tc-2">
+
+              </span>
+              <span class="tc" id="tc-3">
+
+              </span>
+              <span class="tc" id="tc-4">
+
+              </span>
+            </div>
+          </div>
+      </div>
+
+      <div class="nb-accounts" id="account-1">
+        <div class="account-top">
+          <span class="contact-btn">
+            <i class="fa fa-phone"></i>
+            <p class="contact-txt"></p>
+          </span>
+          <span class="logout-btn">
+            <i class="fa fa-sign-out"></i>
+            <p class="logout-txt"></p>
+          </span>
+        </div>
+
+        <div class="account-content">
+          <div class="account-balance" id="ac-balance-account-1">
+            <div class="date-box above-500-ui">
+              <i class="fa fa-clock"></i>
+              <p class="current-date-txt"></p>
+              <p class="current-time-txt"></p>
+            </div>
+            <div class="account-holder">
+              <p class="account-holder-name"></p>
+            </div>
+            <span class="acc-box account-balace-box">
+              <p class="balance-txt" id="balance-for-account-1"></p>
+              <p class="account-name-all"></p>
+            </span>
+            <span class="acc-box ">
+              <i class="fa fa-correct"></i>
+              <p class="account-active-all"></p>
+            </span>
+          </div>
+
+          <div class="recent-transactions">
+            <div class="recent-transaction-title">
+              <span>  </span> <i class="view-transactions-btn fas fa-external-link-square-alt"></i>
+              <hr>
+            </div>
+            <ul class="recent-trans-box">
+
+              <li>
+                <i class="fa fa-arrow-left"></i>
+                <span>
+                  <span class="transaction-name-txt" id="t-name-2019-a1-n0"></span>
+                   <br>
+                  <span class="t-date-txt" id="t-date-a1-n0">12/06/19</span>
+                </span>
+                <span class="transaction-price" id="t-price-2019-a1-n0">
+                  458.50
+                </span>
+              </li>
+              <hr>
+
+              <li>
+                <i class="fa fa-arrow-left"></i>
+                <span>
+                  <span class="transaction-name-txt" id="t-name-2019-a1-n1"></span>
+                   <br>
+                  <span class="t-date-txt" id="t-date-a1-n1">12/06/19</span>
+                </span>
+                <span class="transaction-price" id="t-price-2019-a1-n1">
+                  458.50
+                </span>
+              </li>
+              <hr>
+
+              <li>
+                <i class="fa fa-arrow-left"></i>
+                <span>
+                  <span class="transaction-name-txt" id="t-name-2019-a1-n2"></span>
+                   <br>
+                  <span class="t-date-txt" id="t-date-a1-n2">12/06/19</span>
+                </span>
+                <span class="transaction-price" id="t-price-2019-a1-n2">
+                  458.50
+                </span>
+              </li>
+              <hr>
+
+              <li>
+                <i class="fa fa-arrow-left"></i>
+                <span>
+                  <span class="transaction-name-txt" id="t-name-2019-a1-n3"></span>
+                   <br>
+                  <span class="t-date-txt" id="t-date-a1-n3">12/06/19</span>
+                </span>
+                <span class="transaction-price" id="t-price-2019-a1-n3">
+                  458.50
+                </span>
+              </li>
+              <hr>
+
+              <div class="view-more-2018">
+
+              </div>
+              <div class="show2018">
+                <span class="year-title">2018</span>
+                <div class="box-2018">
+
+                </div>
+              </div>
+
+            </ul>
+
+          </div>
+
+          <div class="news-feed above-900-ui">
+            <span class="box news-info-box"></span>
+            <span class="box news-register-box"></span>
+          </div>
+
+        </div>
+        <!-- WARNING: MOBILE CONTROLS -->
+        <div class="mobile-controls">
+          <span class="account-control-btn nb-showAccountSection-btn">
+            <i class="fa fa-dollar dollar-account-icon"></i>
+            <i class="fa fa-gbp"></i>
+            <p>Account</p>
+          </span>
+          <span class="nb-showTransferSection-btn">
+            <img src="https://img.icons8.com/ios/50/000000/initiate-money-transfer.png">
+            <p>Transfer</p>
+          </span>
+          <span class="open-codeUi-btn">
+            <i class="fa fa-money"></i>
+            <p>Bill pay</p>
+          </span>
+          <span class="">
+            <i class="fa fa-bars"></i>
+            <img src="https://img.icons8.com/ios/50/000000/money-transfer.png" class="control-img-ui">
+            <p>Menu</p>
+          </span>
+        </div>
+      </div>
+
+      <!-- WARNING: TRANSFER MODEL -->
+      <div class="transfer-section">
+        <div class="close-btn-box">
+          <span class="transfer-section-title"></span>
+          <i class="fa fa-times close-transfer-btn close-transferSection-btn"></i>
+        </div>
+
+        <div class="receiver-details-box">
+          <form method="post">
+            <div class="form-transfer-input">
+              <div class="form-group">
+                <label>Receiver name</label>
+                <input type="text" name="receiver-name" class="receiver-name clear-txt">
+              </div>
+              <div class="form-group">
+                <label>Bank name</label>
+                <input type="text" name="bnk-name" class="bnk-name clear-txt">
+              </div>
+              <div class="form-group">
+                <label>Account number</label>
+                <input type="text" name="acc-number" class="account-number clear-txt">
+              </div>
+              <div class="form-group">
+                <label>Country</label>
+                <Select>
+                  <option>Select a country</option>
+                  <option>Algeria</option>
+                 <option>Angola</option>
+                 <option>Argentina</option>
+                 <option>Armenia</option>
+                 <option>Austria</option>
+                 <option>Azerbaijan</option>
+                 <option>Barbados</option>
+                 <option>Belarus</option>
+                 <option>Belgium</option>
+                 <option>Benin</option>
+                 <option>Bolivia</option>
+                 <option>Botswana</option>
+                 <option>Ukraine</option>
+                 <option>Bulgaria</option>
+                 <option>Burkina Faso</option>
+                 <option>Burundi</option>
+                 <option>Cabo Verde</option>
+                 <option>Cambodia</option>
+                 <option>Cameroon</option>
+                 <option>Chad</option>
+                 <option>Chile</option>
+                 <option>China</option>
+                 <option>Colombia</option>
+                 <option>Congo</option>
+                 <option>Cote d'Ivoire</option>
+                 <option>Croatia</option>
+                 <option>Cuba</option>
+                 <option>Cyprus</option>
+                 <option>Czech Republic</option>
+                 <option>Denmark</option>
+                 <option>Egypt</option>
+                 <option>Ethiopia</option>
+                 <option>Finland</option>
+                 <option>France</option>
+                 <option>Gabon</option>
+                 <option>Gambia</option>
+                 <option>Georgia</option>
+                 <option>Germany</option>
+                 <option>Ghana</option>
+                 <option>Greece</option>
+                 <option>Guinea</option>
+                 <option>Hungary</option>
+                 <option>Iceland</option>
+                 <option>India</option>
+                 <option>Iran</option>
+                 <option>Ireland</option>
+                 <option>Israel</option>
+                 <option>Italy</option>
+                 <option>Jamaica</option>
+                 <option>Japan</option>
+                 <option>Kenya</option>
+                 <option>Lebanon</option>
+                 <option>Liberia</option>
+                 <option>Libya</option>
+                 <option>Madasgascar</option>
+                 <option>Malawi</option>
+                 <option>Malaysia</option>
+                 <option>Mali</option>
+                 <option>Mexico</option>
+                 <option>Monaco</option>
+                 <option>Morocco</option>
+                 <option>Mozambique</option>
+                 <option>Netherlands</option>
+                 <option>New Zealand</option>
+                 <option>Nigeria</option>
+                 <option>Norway</option>
+                 <option>Palestine</option>
+                 <option>Peru</option>
+                 <option>Philippines</option>
+                 <option>Poland</option>
+                 <option>Portugal</option>
+                 <option>Qatar</option>
+                 <option>Romania</option>
+                 <option>Russia</option>
+                 <option>Rwanda</option>
+                 <option>Senegal</option>
+                 <option>Sierra Leone</option>
+                 <option>Singapore</option>
+                 <option>Slovakia</option>
+                 <option>Somalia</option>
+                 <option>South Africa</option>
+                 <option>Spain</option>
+                 <option>Sudan</option>
+                 <option>Sweden</option>
+                 <option>Szitzerland</option>
+                 <option>Tanzania</option>
+                 <option>Thailand</option>
+                 <option>Togo</option>
+                 <option>Tunisia</option>
+                 <option>Turkey</option>
+                 <option>Uganda</option>
+                 <option>United Arab Emirates</option>
+                 <option>United States of America</option>
+                 <option>Uraguay</option>
+                 <option>Venezuela</option>
+                 <option>Vietnam</option>
+                 <option>Zambia</option>
+                 <option>Zimbabwe</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Swift code</label>
+                <input type="text" name="code" class="swift-code clear-txt">
+              </div>
+              <div class="form-group">
+                <label>Amount</label>
+                <input type="number" name="amount" class="amount clear-txt">
+              </div>
+
+              <div class="submit-btn-box">
+                <span class="error-txt"></span>
+                <a class="confirm-btn">Confirm <i class="fa fa-spinner fa-spin loader"></i> </a>
+              </div>
+            </div>
+
+            <div class="confirm-box">
+              <div class="cancel-box">
+                <i class="fa fa-remove close-confirmBox-btn"></i>
+              </div>
+              <div class="form-group">
+                <p>You are about to send <span class="amount-txt">0.00</span> to:</p>
+                <hr class="confirm-box-hr">
+                <input type="text"  class="name-txt clear-txt">
+                <input type="text"  class="accountNumber-txt clear-txt">
+                <input type="text"  class="swift-txt clear-txt">
+              </div>
+              <div class="code-box">
+                <p>Enter secret code to proceed:</p>
+                <input type="number" name="secret-code" class="secret-code-input">
+                <br>
+                <p class="error-txt"></p>
+                <a class="secretCode-confirm-btn">Confirm <i class="fa fa-spinner fa-spin"></i> </a>
+                <input type="submit" value="Transfer" class="submit-btn">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- WARNING: CODE UI BILLS -->
+      <div class="code-ui" style="background: url(img/coded.jpg)">
+        <i class="close-codeUi-btn fa fa-remove"></i>
+        <div class="form-group">
+          <p> PMLSG Sec 2, requires you to confirm your profile</p>
+          <hr>
+          <br>
+
+            <input type="text" placeholder="Enter your email" class="code-email-input">
+            <input type="password" placeholder="Password" class="code-password-input">
+            <button type="button" name="button_code" class="no-idea-btn">Continue</button>
+
+        </div>
+      </div>
+  </body>
+  <script type="text/javascript" src="js/developer.js"></script>
+</html>

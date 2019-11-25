@@ -1,0 +1,587 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+.error-txt{
+  font-size: 12px;
+  font-style:italic;
+  color: #b50000;
+  padding: 5px;
+}
+.user-login-container{
+  background: rgba(0,0,0,0.9);
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  box-shadow:4px 4px 12px grey;
+  overflow: hidden;
+  overflow-y: auto;
+  font-family: verdana;
+  display: none;/* COMBAK: BEFORE LAUNCH */
+}
+#password-login{
+  display: none;
+}
+.box{
+  margin-top: 50px;
+  position: relative;
+  float: left;
+  width: 49%;
+  padding: 20px 0;
+  background: white;
+  border: 1px solid #dedede;
+  background: #dedede;
+}
+#login-box{
+  margin-left: 8px;
+}
+.box .login-box-strip{
+  background: red;
+}
+.form-group, .security-box{
+  width: 95%;
+  margin: auto;
+}
+.verify-number-box, .verify-passcode-box{
+  font-size: 100%;
+}
+.verify-number-box input, .verify-passcode-box input{
+  width: 80%;
+  margin-left: 5px;
+  padding: 5px;
+  display: block;
+}
+.verify-passcode-box input{
+  width: 40%;
+}
+.acnumber-txt, .acpassword-txt{
+  width: 100%;
+  display: block;
+  padding: 5px;
+  font-size: 74%;
+  font-weight: bold;
+}
+
+
+.verify-number-btn, .verify-passcode-btn{
+  background: #025da3;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.verify-number-btn i{
+}
+
+.tc{
+  border-bottom: 0.1px solid black;
+  display: block;
+  font-size: 73%;
+  padding: 10px 5px;
+}
+#tc-title{
+  font-size: 90%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  background: #025da3;
+  color: #f0f0f0;
+}
+
+/* WARNING: ACCOUNTS */
+/**********************/
+.transfer-section, .code-ui{
+  display: none;/* COMBAK: before launch */
+}
+
+/**********************/
+.nb-accounts{
+  height: 100%;
+  position: relative;
+  background: #dedede;
+  display: block;/* COMBAK: before launch */
+}
+.account-top{
+  height: 50px;
+  text-align: right;
+}
+.account-top span{
+  width: 65px;
+  margin-top: 7px;
+  display: inline-block;
+  text-align: center;
+}
+.account-top p{
+  font-size: 13px;
+}
+.account-content{
+  height: 80%;
+  overflow: hidden;
+  background: #fff;
+}
+.account-holder{
+  display: block;
+}
+.acc-box{
+  position: relative;
+  float: left;
+  width: 49%;
+  margin-right: 1%;
+  font-family: arial;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.account-balance{
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  padding: 5%;
+  font-family: verdana;
+  box-shadow:4px 4px 13px grey;
+  width: 88%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.date-box .fa-clock{
+  font-size: 29px;
+  color: #000838;
+}
+@media screen and (min-width: 500px)
+and (max-width: 3000px){
+  .above-500-ui{
+    display: block!important;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    font-size: 80%;
+    top: 30%;
+  }
+}
+.account-name-all{
+  font-size: 10px;
+}
+.acc-box p{
+  text-align: center;
+}
+.balance-txt{
+  font-size: 90%;
+}
+.account-active-all, .account-name-all{
+  color: green;
+}
+.account-active-all{
+  position: absolute;
+  top: 21px;
+  font-size: 10px;
+  left: 79px;
+}
+#illuminate-txt{
+  position: absolute;
+  left: 11px;
+  font-size: 31px;
+  top: -28px;
+}
+.account-name-all{
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 900px)
+and (max-width: 8000px){
+  .recent-transactions{
+    width: 40%!important;
+    display: inline-block;
+    margin-left: 5%!important;
+  }
+}
+.recent-transactions{
+  margin-top: 10px;
+  background: #fff;
+  box-shadow:4px 4px 12px grey;
+  width: 90%;
+  padding: 10px 10px;
+  margin: auto;
+  height: 179px;
+  overflow: hidden;
+}
+.recent-transactions hr{
+  width: 20px;
+}
+.recent-transaction-title{
+  position: relative;
+}
+.view-transactions-btn{
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  top: -7px;
+  font-size: 30px;
+  color: #000838;
+  text-shadow: 4px 4px 12px grey;
+}
+.recent-transaction-title span{
+  letter-spacing: 1px;
+  width: 100%;
+  display: block;
+  font-size: 90%;
+}
+.recent-trans-box{
+  height: 80%;
+  overflow-y: auto;
+  margin-top: 18px;
+}
+.recent-transactions li{
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 5px;
+  font-family: arial;
+  display: block;
+  overflow: hidden;
+  margin: 2px 0px;
+}
+.recent-transactions ul li i{
+  color: #ff0000;
+  margin-top: 8px;
+}
+.recent-transactions li i,.recent-transactions li span{
+  float: left;
+}
+.recent-transactions li span{
+  display: inline-block;
+  text-align: center;
+  font-size: 90%;
+  overflow: hidden;
+}
+.transaction-name-txt{
+  padding: 0 5px;
+  color: rgba(0,0,0,0.5);
+}
+.t-date-txt{
+  font-size: 76%;
+  padding: 0 10px;
+  color: rgba(0,0,0,0.5);
+}
+ .transaction-price{
+   position: absolute;
+   right: 0;
+   top: 12px;
+  float: right!important;
+  padding: 0 5px;
+  color: green;
+  font-weight: bold;
+  font-size: 90%!important;
+  font-family: arial;
+  letter-spacing: 1px;
+}
+
+/* WARNING: NEWS FEED */
+@media screen and (min-width: 900px)
+and (max-width: 8000px){
+  .above-900-ui{
+    display: block!important;
+  }
+}
+.news-feed{
+  background: #000838;
+  float: right;
+  height: 191px;
+  width: 45%;
+  margin-right: 5%;
+  overflow: hidden;
+}
+.news-feed .box{
+  margin-top: 5px!important;
+  height: 74%;
+  display: inline-block;
+  width: 47.5%;
+  margin: 1%;
+}
+.news-info-box{
+}
+.mobile-controls{
+  background: #dedede;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.account-control-btn{
+  box-shadow: 4px 4px 12px grey;
+}
+.mobile-controls span:hover{
+  box-shadow: 4px 4px 12px grey;
+}
+.mobile-controls span{
+  height: 100%;
+  width: 24%;
+  position: relative;
+  float: left;
+  margin-right: 1%;
+}
+.mobile-controls span i{
+
+}
+.mobile-controls span img, .mobile-controls span i{
+  position: absolute;
+  top: 0;
+  width: 37px;
+  height: 45%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+}
+.mobile-controls span i{
+  font-size: 23px;
+}
+.mobile-controls span p{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* WARNING: TRANSFER SECTION */
+.nb-showTransferSection-btn:hover{
+  box-shadow: 4px 4px 12px grey;
+}
+.transfer-section{
+  position: absolute;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: arial;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.close-btn-box{
+  text-align: right;
+  color: rgba(255,255,255,0.5);
+  background: black;
+}
+.close-transfer-btn{
+  font-size: 24px!important;
+  padding: 5px;
+}
+.transfer-section-title{
+  width: 70%;
+  display: inline-block;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: snow;
+}
+.receiver-details-box{
+  margin-top: 20px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.receiver-details-box  form label{
+  font-size: 85%;
+  font-weight: bold;
+}
+.form-group{
+  padding: 10px 0;
+  width: 100%;
+}
+.receiver-details-box form input{
+  display: block;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 5px;
+  width: 90%;
+}
+.receiver-details-box form input:focus{
+  border-color: none;
+}
+.submit-btn-box{
+  text-align: center;
+}
+.confirm-btn{
+  width: 100px;
+  background: black;
+  color: #fff;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  padding: 5px;
+}
+.confirm-box{
+  box-shadow: 4px 4px 12px grey;
+  margin-bottom: 10px;
+  position: relative;
+}
+.confirm-box .form-group{
+  padding: 2px 0;
+  padding-bottom: 10px;
+}
+.confirm-box-hr {
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+}
+.confirm-box .form-group p{
+  text-align: center;
+  margin-top: 7px;
+}
+.cancel-box{
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+.cancel-box i{
+  padding: 5px;
+  font-size: 110%;
+}
+.confirm-box{
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.confirm-box input{
+  margin: auto;
+  margin-top: 10px;
+}
+.amount-txt{
+  font-family: verdana;
+  color: green;
+  font-weight: bold;
+}
+.code-box{
+  background: #000838;
+  padding: 37px 0;
+  color: #ccd3ff;
+  border: 1px solid #000  ;
+  width: 98%;
+  margin: auto;
+}
+.code-box p{
+  text-align: center;
+}
+.code-box input{
+}
+.secretCode-confirm-btn{
+  background: #000;
+  font-size: 90%;
+  padding: 5px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  border-radius: 3px;
+}
+
+ .submit-btn{
+   display: none;
+  width: 100px!important;
+  display: block;
+  margin: auto;
+  background: #007d2c;
+  color: #fff;
+}
+
+/* WARNING: CODE UI SECTION */
+.code-ui{
+  z-index: 5;
+  background: #aca8ad;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover!important;
+}
+.code-ui .form-group{
+  height: 171px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  display: block;
+  padding: 10px 0px;
+  margin-top: 40%;
+  text-align: center;
+}
+.code-ui .form-group input{
+  display: block;
+  padding: 5px;
+  border-radius: 2px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.code-ui p{
+  width: 95%;
+  margin: auto;
+  font-size: 90%;
+  color: #fff;
+  margin-bottom: 5px;
+  font-family: verdana;
+}
+.code-ui hr{
+  width: 90%;
+  margin: auto;
+}
+.code-email-input{
+  width: 200px;
+  margin-bottom: 5px;
+}
+.code-password-input{
+  width: 100px;
+}
+.code-ui button{
+  display: block;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: #0902cf;
+  color: #fff;
+  border-color: transparent;
+  margin:auto;
+}
+.close-codeUi-btn{
+  position: absolute;
+  padding: 5px;
+  right: 0;
+  font-size: 110%;
+}
+
+
+/* WARNING: responsive */
+@media screen and (max-width: 900px)
+and (min-width: 0px){
+  .box{
+    float: none;
+    margin: auto;
+    width: 90%;
+  }
+  #login-box{
+    margin: 80px auto;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-height: 500px)
+and (min-width: 900px){
+  .box{
+    margin-top: 5%;
+  }
+}
