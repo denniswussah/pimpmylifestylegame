@@ -21,7 +21,7 @@ html, body{
   overflow: hidden;
   overflow-y: auto;
   font-family: verdana;
-  display: none;/* COMBAK: BEFORE LAUNCH */
+  display: block;/* COMBAK: BEFORE LAUNCH */
 }
 #password-login{
   display: none;
